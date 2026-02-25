@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daily Notes — Minimal Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Daily Notes — short, focused daily blog entries." />
+  <style>
+    /* Fallback for very small screens while CSS loads */
+    html { box-sizing: border-box; }
+    *,*::before,*::after{box-sizing:inherit}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">Daily Notes</h1>
+        <p class="site-lead">Concise daily thoughts and quick reads</p>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="#posts">Latest</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 class="hero-title">Short entries for focused days</h2>
+      <p class="hero-sub">Daily reflections, techniques, and small experiments — readable in under five minutes.</p>
+    </section>
+
+    <section class="controls">
+      <input id="search" class="search" placeholder="Search posts" aria-label="Search posts" />
+      <a class="cta" href="#new">New post</a>
+    </section>
+
+    <section id="posts" class="posts">
+      <article class="post">
+        <div class="post-body">
+          <h3 class="post-title">Keeping Focused — Feb 25, 2026</h3>
+          <p class="post-meta">Feb 25, 2026 • 3 min read</p>
+          <p class="post-excerpt">A short entry about techniques for staying productive when working remotely: timeboxing, single-tasking, and the two-minute rule.</p>
+        </div>
+        <a class="read-more" href="#">Read</a>
+      </article>
+
+      <article class="post">
+        <div class="post-body">
+          <h3 class="post-title">Tiny Experiments — Feb 24, 2026</h3>
+          <p class="post-meta">Feb 24, 2026 • 2 min read</p>
+          <p class="post-excerpt">How a five-minute evening review improved sleep and reduced next-day context switching.</p>
+        </div>
+        <a class="read-more" href="#">Read</a>
+      </article>
+
+      <article class="post">
+        <div class="post-body">
+          <h3 class="post-title">Minimal Tooling — Feb 23, 2026</h3>
+          <p class="post-meta">Feb 23, 2026 • 4 min read</p>
+          <p class="post-excerpt">Streamlining your writing setup: editor choices, keyboard habits, and a simple publish flow.</p>
+        </div>
+        <a class="read-more" href="#">Read</a>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h4>About</h4>
+      <p>Daily Notes is a minimal space for short, practical entries. Designed to be fast to read and easy to scan.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Daily Notes — Built for clarity</div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+:root{
+  --bg:#fbfbfb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0f172a;
+  --accent-2:#0ea5a4;
+  --radius:12px;
+  --max-width:860px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+.site-header{border-bottom:1px solid #e6e9ef;background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.site-title{font-size:20px;margin:0}
+.site-lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+.nav-link{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+
+.hero{padding:28px 0 8px}
+.hero-title{margin:0;font-size:28px;font-weight:600}
+.hero-sub{margin:8px 0 0;color:var(--muted)}
+
+.controls{display:flex;gap:12px;align-items:center;margin:16px 0}
+.search{flex:1;max-width:520px;padding:10px 12px;border-radius:10px;border:1px solid #e6e9ef;background:var(--card);outline:none}
+.search:focus{box-shadow:0 4px 18px rgba(16,24,40,0.06);border-color:var(--accent-2)}
+.cta{display:inline-block;padding:10px 14px;background:var(--accent-2);color:white;border-radius:10px;text-decoration:none;font-weight:600}
+
+.posts{display:grid;grid-template-columns:1fr;gap:14px;margin-top:6px}
+.post{display:flex;align-items:center;justify-content:space-between;padding:18px;background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(13,27,39,0.04);border:1px solid rgba(10,10,10,0.02)}
+.post-body{max-width:76%}
+.post-title{margin:0;font-size:16px}
+.post-meta{margin:6px 0 8px;color:var(--muted);font-size:13px}
+.post-excerpt{margin:0;color:#374151}
+.read-more{color:var(--accent-2);text-decoration:none;font-weight:600;margin-left:18px}
+
+.about{margin:28px 0;padding:18px;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:10px;border:1px solid #eef2f7}
+
+.site-footer{padding:28px 0;color:var(--muted);font-size:13px;border-top:1px solid #eceff4;margin-top:28px}
+
+@media (min-width:900px){
+  .posts{grid-template-columns:1fr 1fr;gap:20px}
+  .post-body{max-width:100%}
+}
+
+@media (max-width:520px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:8px}
+  .nav{display:none}
+  .posts{grid-template-columns:1fr}
+  .container{padding:18px}
+}
